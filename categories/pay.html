@@ -129,11 +129,15 @@
       </p>
 
       <form id="order-form" enctype="multipart/form-data">
+         <!-- anti-bot honeypot -->
+        <input type="text" name="_honey" style="display:none">
+
+        <!-- disable CAPTCHA if not needed (or set to true to use FormSubmit’s CAPTCHA) -->
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="Product" id="product-name-field">
         <input type="hidden" name="Price" id="product-price-field">
 
-        <input type="text" name="Name" placeholder="Your Name" required />
+        <input type="text" name="Name" placeholder="Your Full Name" required pattern="[A-Za-z\s]{3,50}"/>
         <input type="text" name="Phone" placeholder="Phone Number" required pattern="[0-9]{10}" title="Please enter a 10-digit phone number" maxlength="10"/>
         <input type="text" name="Quantity" placeholder="Quantity" required />
             <!-- State Selector -->
