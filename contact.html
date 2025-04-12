@@ -72,8 +72,9 @@
       <!-- Replace with your email -->
       <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> -->
 
-      <input type="text" name="Name" placeholder="Your Name" required />
-      <input type="email" name="Email" placeholder="Your Email" required />
+      <input type="text" name="Name" placeholder="Your Name" required pattern="[A-Za-z\s]{3,50}"/>
+      <input type="email" name="Email" placeholder="Your Email (Optional)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+      title="Please enter a valid email address" />
       <input type="tel" name="Phone" placeholder="Phone Number" required pattern="[0-9]{10}" title="Please enter a 10-digit phone number" maxlength="10"/>
       <textarea name="Message" placeholder="Your Message" rows="4" required></textarea>
 
@@ -86,17 +87,29 @@
   <script>
     const form = document.getElementById('contact-form');
     const confirmation = document.getElementById('confirmation');
-
-    form.addEventListener('submit', async function(e) {
+    const messageField = form.querySelector('textarea[name="Message"]');
+  
+    form.addEventListener('submit', async function (e) {
+      const messageValue = messageField.value.toLowerCase();
+  
+      // Basic sanitization against XSS attempts
+      const hasScript = /<script|javascript:|onerror=|onload=|%3cscript/i.test(messageValue);
+      if (hasScript) {
+        alert("Your message contains potentially harmful content. Please remove any suspicious text.");
+        e.preventDefault();
+        return false;
+      }
+  
+      // Proceed with actual submission
       e.preventDefault();
       const formData = new FormData(form);
-
+  
       try {
         const response = await fetch('https://formsubmit.co/enchantedenergystore@gmail.com', {
           method: 'POST',
           body: formData
         });
-
+  
         if (response.ok) {
           form.reset();
           confirmation.style.display = 'block';
@@ -109,5 +122,6 @@
       }
     });
   </script>
+  
 </body>
 </html>
