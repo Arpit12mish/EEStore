@@ -119,6 +119,15 @@
       <h1 id="product-name">Product Name</h1>
       <div class="price" id="product-price">₹0.00</div>
 
+      <!-- New Statement Below -->
+      <p style="margin-top: -10px; margin-bottom: 10px; font-weight: 600; color: #e86c42;">
+        Shipping charge: ₹50 in Delhi, ₹100 outside Delhi.
+      </p>
+
+      <p style="background: #fff7e6; border-left: 4px solid #e86c42; padding: 10px; font-weight: 600; color: #000;">
+        🔔 Please fill out the form below to confirm your order. <strong>This is compulsory</strong> for us to process and contact you.
+      </p>
+
       <form id="order-form" enctype="multipart/form-data">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="Product" id="product-name-field">
@@ -126,8 +135,21 @@
 
         <input type="text" name="Name" placeholder="Your Name" required />
         <input type="text" name="Phone" placeholder="Phone Number" required pattern="[0-9]{10}" title="Please enter a 10-digit phone number" maxlength="10"/>
+        <input type="text" name="Quantity" placeholder="Quantity" required />
+            <!-- State Selector -->
+        <label for="location"><strong>Select Location for Shipping:</strong></label>
+        <select id="location" name="Location" required style="margin: 8px 0; padding: 8px; border-radius: 6px; border: 1px solid #ccc; width: 100%;">
+          <option value="">-- Select --</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Outside">Outside Delhi</option>
+        </select>
+
+        <!-- Final Price -->
+        <p style="font-weight: bold; margin-top: 10px;">
+          Final Price (Product + Shipping): <span id="final-price">₹0.00</span>
+        </p>
         <textarea name="Address" placeholder="Address" rows="3" required></textarea>
-        <input type="text" name="Quantity" placeholder="No. of pieces" required />
+        
         <label><strong>Upload Payment Screenshot</strong></label>
         <input type="file" name="Payment Screenshot" accept="image/*" required />
 
@@ -149,7 +171,7 @@
     <!-- Right Side -->
     <div class="checkout-right">
       <div class="qr-title">QR code for payment</div>
-      <img src="./EESProducts/QRPay.png" alt="QR Code" class="qr-image" />
+      <img src="./EESProducts/payQR.jpg" alt="QR Code" class="qr-image" />
     </div>
   </div>
 
@@ -157,25 +179,25 @@
     const urlParams = new URLSearchParams(window.location.search);
     const productName = urlParams.get("name") || "Product";
     const productPrice = urlParams.get("price") || "0";
-
+  
     document.getElementById("product-name").textContent = productName;
     document.getElementById("product-price").textContent = `₹${productPrice}`;
     document.getElementById("product-name-field").value = productName;
     document.getElementById("product-price-field").value = `₹${productPrice}`;
-
+  
     const form = document.getElementById("order-form");
     const confirmation = document.getElementById("confirmation-msg");
-
+  
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       const formData = new FormData(form);
-
+  
       try {
-        const response = await fetch("https://formsubmit.co/mish12arpit@gmail.com", {
+        const response = await fetch("https://formsubmit.co/enchantedenergystore@gmail.com", {
           method: "POST",
           body: formData,
         });
-
+  
         if (response.ok) {
           form.reset();
           confirmation.style.display = "block";
@@ -187,16 +209,43 @@
         alert("Failed to submit order.");
       }
     });
-
+  
     function orderViaInstagram() {
       const message = encodeURIComponent(`Hi, I'm interested in "${productName}"`);
       window.open("https://www.instagram.com/enchanted_energy_store", "_blank");
     }
-
+  
     function orderViaWhatsApp() {
       const message = encodeURIComponent(`Hi, I'm interested in "${productName}"`);
       window.open(`https://wa.me/918368046868?text=${message}`, "_blank");
     }
+  
+    // FINAL PRICE CALCULATION
+    const productPriceRaw = parseFloat(productPrice);
+    const locationDropdown = document.getElementById("location");
+    const quantityInput = document.querySelector('input[name="Quantity"]');
+    const finalPriceElement = document.getElementById("final-price");
+  
+    function updateFinalPrice() {
+      const location = locationDropdown.value;
+      const quantity = parseInt(quantityInput.value) || 0;
+      let shipping = 0;
+  
+      if (location === "Delhi") {
+        shipping = 51;
+      } else if (location === "Outside") {
+        shipping = 101;
+      }
+  
+      const subtotal = productPriceRaw * quantity;
+      const final = subtotal + shipping;
+  
+      finalPriceElement.textContent = `₹${final.toFixed(2)}`;
+    }
+  
+    locationDropdown.addEventListener("change", updateFinalPrice);
+    quantityInput.addEventListener("input", updateFinalPrice);
   </script>
+  
 </body>
 </html>
