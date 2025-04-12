@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Enchanted Energy Store</title>
+  <meta name="title" content="Enchanted Energy Store">
+  <meta name="description" content="This is an eCommerce platform">
+
+  <!-- 
+    - logo-tab
+  -->
+  <link rel="shortcut icon" href="./assets/images/ees-logoo.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+      </button>
+      <a href="#" class="">
+        <img src="./assets/images/ees-logoo.png" alt="Enchanted Energy Store Logo" width="50" height="50" />
+      </a>
+
+      <a href="#" class="logo">Enchanted Energy Store</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#categories" class="navbar-link" data-nav-link>Categories</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./contact.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+        
+      </nav>
+
+      <div class="header-actions">
+
+        <!-- <button class="action-btn" aria-label="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button> -->
+
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-banner.jpg')">
+        <div class="container">
+
+          <h1 class="h1 hero-title">
+            <span class="span">Enchanted Energy </span> Store
+          </h1>
+
+          <p class="hero-text">Sale up to 10% off today</p>
+
+          <a href="#shop" class="btn">Shop Now</a>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category" id="categories" aria-label="category">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Top</span> categories
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+                <a href="./categories/crystal-jewellery.html">
+                  <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                    <img src="./assets/images/category-1.png" width="330" height="300" loading="lazy" alt="CRYSTAL JEWELLERY"
+                      class="img-cover">
+                  </figure>
+                </a>
+                
+
+                <h3 class="h3">
+                  <a href="./categories/crystal-jewellery.html" class="card-title">CRYSTAL JEWELLERY</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+                <a href="./categories/spiritual-wellness.html">
+                  <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                    <img src="./assets/images/category-2.png" width="330" height="300" loading="lazy" alt="SPIRITUAL AND WELLNESS TOOLS"
+                      class="img-cover">
+                  </figure>
+                </a>
+                
+
+                <h3 class="h3">
+                  <a href="./categories/spiritual-wellness.html" class="card-title">SPIRITUAL & WELLNESS TOOLS</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+                <a href="./categories/home-ambience.html">
+                  <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                    <img src="./assets/images/category-3.png" width="330" height="300" loading="lazy" alt="HOME AND AMBIENCE"
+                      class="img-cover">
+                  </figure>
+                </a>
+                
+
+                <h3 class="h3">
+                  <a href="./categories/home-ambience.html" class="card-title">HOME AND AMBIENCE
+                  </a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+                <a href="./categories/oils-attar.html">
+                  <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                    <img src="./assets/images/category-4.png" width="330" height="300" loading="lazy" alt="ESSENTIAL OILS & ATTAR"
+                      class="img-cover">
+                  </figure>
+  
+                </a>
+                
+                <h3 class="h3">
+                  <a href="./categories/oils-attar.html" class="card-title">ESSENTIAL OILS & ATTAR
+                  </a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+                <a href="./categories/candles.html">
+                  <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                    <img src="./assets/images/category-5.png" width="330" height="300" loading="lazy"
+                      alt="AROMA & SPELL CANDLES" class="img-cover">
+                  </figure>
+                </a>
+
+                <h3 class="h3">
+                  <a href="./categories/candles.html" class="card-title">AROMA & SPELL CANDLES</a>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #OFFERS - Services
+      -->
+
+      <section class="section offer" aria-label="offer">
+        <div class="container">
+          <h2 class="h2 section-title">
+            <span class="span">Our</span> Services
+          </h2>
+          <ul class="grid-list">
+      
+            <li>
+              <div class="offer-card has-bg-image img-holder"
+                style="background-image: url('./assets/images/3.jpg'); --width: 540; --height: 374; color: white;">
+                <p class="card-subtitle">Find Your Perfect Match</p>
+                <h3 class="h3 card-title">
+                  Personalised <span class="span">Crystal Matching</span>
+                </h3>
+                <a href="services.html" class="btn">Read More</a>
+              </div>
+            </li>
+      
+            <li>
+              <div class="offer-card has-bg-image img-holder"
+                style="background-image: url('./assets/images/2.jpg'); --width: 540; --height: 374; color: white;" >
+                <p class="card-subtitle">Cleanse & Recharge</p>
+                <h3 class="h3 card-title">
+                  Crystal <span class="span">Charging & Cleansing</span>
+                </h3>
+                <a href="services.html" class="btn">Read More</a>
+              </div>
+            </li>
+      
+            <li>
+              <div class="offer-card has-bg-image img-holder"
+                style="background-image: url('./assets/images/11.webp'); --width: 540; --height: 374; color: white;">
+                <p class="card-subtitle">Discover Your Energy</p>
+                <h3 class="h3 card-title">
+                  Free <span class="span">Aura Checking</span>
+                </h3>
+                <a href="services.html" class="btn">Read More</a>
+              </div>
+            </li>
+      
+          </ul>
+        </div>
+      </section>
+      
+
+      <!-- 
+        - #PRODUCT
+      -->
+
+      <section class="section product" id="shop" aria-label="product">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Best</span> Seller
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/Best Sellers/Rose shaped Moonstone Pendant.png" width="360" height="360" loading="lazy"
+                    alt="Commodo leo sed porta" class="img-cover default">
+                  
+
+                </div>
+
+                <div class="card-content">
+
+                  
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Rose shaped Moonstone Pendant</a>
+                  </h3>
+
+                  <data class="card-price" value="999">₹999.00</data>
+                  <a href="#" class="buy-now-btn" onclick="redirectToPayPage('Rose shaped Moonstone Pendant', 999)">Buy Now</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/Best Sellers/Rose Pillar Candle.png" width="360" height="360" loading="lazy"
+                    alt="Purus consequat congue sit" class="img-cover default">
+                  
+
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Rose Pillar Candle</a>
+                  </h3>
+
+                  <data class="card-price" value="399">₹399.00</data>
+                  <a href="#" class="buy-now-btn" onclick="redirectToPayPage('Rose Pillar Candle', 399)">Buy Now</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/Best Sellers/Rose Quartz Roller with Gua Sha.png" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover default">
+                 
+
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Rose Quartz Roller with Gua Sha</a>
+                  </h3>
+
+                  <data class="card-price" value="1199">₹1199.00</data>
+                  <a href="#" class="buy-now-btn" onclick="redirectToPayPage('Rose Quartz Roller with Gua Sha', 1199)">Buy Now</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/Best Sellers/Pyrite Coins or Zibu Coins.png" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover default">
+                  
+
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Pyrite Coins or Zibu Coins</a>
+                    <p>2 pieces</p>
+                  </h3>
+
+                  <data class="card-price" value="449">₹449.00</data>
+                  <a href="#" class="buy-now-btn" onclick="redirectToPayPage('Pyrite Coins or Zibu Coins', 449)">Buy Now</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/Best Sellers/Rose Quartz Pendant.png" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover default">
+                  
+
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Rose Quartz Pendant</a>
+                  </h3>
+
+                  <data class="card-price" value="799">₹799.00</data>
+                  <a href="#" class="buy-now-btn" onclick="redirectToPayPage('Rose Quartz Pendant', 799)">Buy Now</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/Best Sellers/7 Chakra Lava Bracelet.png" width="360" height="360" loading="lazy"
+                    alt="Nam justo libero porta ege" class="img-cover default">
+                  
+
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">7 Chakra Lava Bracelet</a>
+                  </h3>
+
+                  <data class="card-price" value="799">₹799.00</data>
+                  <a href="#" class="buy-now-btn" onclick="redirectToPayPage('7 Chakra Lava Bracelet', 799)">Buy Now</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/Best Sellers/Iced Coffee Candle.png" width="360" height="360" loading="lazy"
+                    alt="Nam justo libero porta ege" class="img-cover default">
+                  
+
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Iced Coffee Candle</a>
+                  </h3>
+
+                  <data class="card-price" value="349">₹349.00</data>
+                  <a href="#" class="buy-now-btn" onclick="redirectToPayPage('Iced Coffee Candle', 349)">Buy Now</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/Best Sellers/Crystal Navgraha Pyramid.png" width="360" height="360" loading="lazy"
+                    alt="Etiam commodo leo sed" class="img-cover default">
+                  
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Crystal Navgraha Pyramid</a>
+                  </h3>
+
+                  <data class="card-price" value="699">₹699.00</data>
+                  <a href="#" class="buy-now-btn" onclick="redirectToPayPage('Crystal Navgraha Pyramid', 699)">Buy Now</a>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-label="service">
+        <div class="container">
+      
+          <img src="./assets/images/ees-logoo.png" width="250" height="250" loading="lazy" alt="EES Logo" class="img">
+      
+          <h2 class="h2 section-title">
+            <span class="span">What your Energy needs,</span> when you need it Most.
+          </h2>
+      
+          <ul class="grid-list">
+      
+            <li>
+              <div class="service-card">
+                <figure class="card-icon">
+                  <img src="./assets/images/service-icon-1.png" width="70" height="70" loading="lazy" alt="Aura Icon">
+                </figure>
+                <h3 class="h3 card-title">Free Aura Check</h3>
+                <p class="card-text">
+                  Discover your aura colors and energy patterns absolutely free.
+                </p>
+              </div>
+            </li>
+      
+            <li>
+              <div class="service-card">
+                <figure class="card-icon">
+                  <img src="./assets/images/magic-ball.png" width="70" height="70" loading="lazy" alt="Crystal Match Icon">
+                </figure>
+                <h3 class="h3 card-title">Crystal Matching</h3>
+                <p class="card-text">
+                  Get personalized crystal recommendations based on your energy and goals.
+                </p>
+              </div>
+            </li>
+      
+            <li>
+              <div class="service-card">
+                <figure class="card-icon">
+                  <img src="./assets/images/save.png" width="70" height="70" loading="lazy" alt="Charging Icon">
+                </figure>
+                <h3 class="h3 card-title">Crystal Charging</h3>
+                <p class="card-text">
+                  Cleanse and recharge your crystals with moonlight, sound, or sun energy.
+                </p>
+              </div>
+            </li>
+      
+            <li>
+              <div class="service-card">
+                <figure class="card-icon">
+                  <img src="./assets/images/contacts.png" width="70" height="70" loading="lazy" alt="Support Icon">
+                </figure>
+                <h3 class="h3 card-title">1-on-1 Spiritual Support</h3>
+                <p class="card-text">
+                  Message us anytime for crystal guidance, energy readings, or product help.
+                </p>
+              </div>
+            </li>
+      
+          </ul>
+      
+        </div>
+      </section>
+      
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <!-- <section class="cta has-bg-image" aria-label="cta" style="background-image: url('./assets/images/cta-bg.jpg')">
+        <div class="container">
+
+          <figure class="cta-banner">
+            <img src="./assets/images/cta-banner.png" width="900" height="660" loading="lazy" alt="cat" class="w-100">
+          </figure>
+
+          <div class="cta-content">
+
+            <img src="./assets/images/cta-icon.png" width="120" height="35" loading="lazy" alt="taste guarantee"
+              class="img">
+
+            <h2 class="h2 section-title">Taste it, love it or we’ll replace it… Guaranteed!</h2>
+
+            <p class="section-text">
+              At Petio, we believe your dog and cat will love their food so much that if they don’t … we’ll help you
+              find a
+              replacement. That’s our taste guarantee.
+            </p>
+
+            <a href="#" class="btn">Find out more</a>
+
+          </div>
+
+        </div>
+      </section> -->
+
+
+      <!-- 
+        - #BRAND
+      -->
+
+      <!-- <section class="section brand" aria-label="brand">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Popular</span> Brands
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./assets/images/brand-1.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./assets/images/brand-2.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./assets/images/brand-3.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./assets/images/brand-4.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./assets/images/brand-5.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section> -->
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.jpg')">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Enchanted Energy</a>
+
+          <p class="footer-text">
+            If you have any question, please contact us at <a href="mailto:enchnatedenergystore@gmail.com"
+              class="link">enchnatedenergystore@gmail.com</a>
+          </p>
+
+          <ul class="contact-list">
+
+            <!-- <li class="contact-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="address">
+                30 Buttonwood St.Pataskala OH 43062
+              </address>
+            </li> -->
+
+            <li class="contact-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+              <a href="" class="contact-link">(+91) 8882268673</a>
+              <a href="" class="contact-link">(+91) 8368046868</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.instagram.com/enchanted_energy_store/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Corporate</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Careers</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQs</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Vendors</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Affiliate Program</a>
+          </li>
+
+        </ul>-->
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Paid Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Chakra Balancing Sessions</a>
+          </li>
+
+          
+
+          <li>
+            <a href="#" class="footer-link">Energy Healing Sessions (Reiki Inspired)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Crystal Grid Setup Guidance</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Zodiac-Based Crystal Kits</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Personal Numerology Reading</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Custom Affirmation Creation
+            </a>
+          </li>
+
+        </ul> 
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Free Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Free aura checking</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Crystal charging and cleansing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Personalised crystal matching</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pre charged with specific intentions</a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="footer-link"></a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"></a>
+          </li> -->
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <!-- <p class="copyright">
+          &copy; 2022 Made with ♥ by <a href="#" class="copyright-link">codewithsadee.</a>
+        </p> -->
+
+        <!-- <img src="./assets/images/payment.png" width="397" height="32" loading="lazy" alt="payment method" class="img"> -->
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    function redirectToPayPage(name, price) {
+      const url = new URL('./categories/pay.html', window.location.href);
+      url.searchParams.set("name", name);
+      url.searchParams.set("price", price);
+      window.location.href = url.toString();
+    }
+  </script>
+  
+</body>
+
+</html>

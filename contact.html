@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <!-- 
+    - logo-tab
+  -->
+  <link rel="shortcut icon" href="./assets/images/ees-logoo.png" type="image/svg+xml">
+  <style>
+    body {
+      font-family: 'Nunito Sans', sans-serif;
+      background-color: #f7f7f7;
+      padding: 2rem;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #e86c42;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    form button {
+      width: 100%;
+      background-color: #e86c42;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    #confirmation {
+      margin-top: 1rem;
+      color: green;
+      font-weight: bold;
+      display: none;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+
+    <form id="contact-form" enctype="multipart/form-data">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Contact Submission">
+      <input type="hidden" name="_template" value="table">
+
+      <!-- Replace with your email -->
+      <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> -->
+
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <input type="tel" name="Phone" placeholder="Phone Number" required pattern="[0-9]{10}" title="Please enter a 10-digit phone number" maxlength="10"/>
+      <textarea name="Message" placeholder="Your Message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div id="confirmation">✅ Message sent successfully!</div>
+  </div>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const confirmation = document.getElementById('confirmation');
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch('https://formsubmit.co/mish12arpit@gmail.com', {
+          method: 'POST',
+          body: formData
+        });
+
+        if (response.ok) {
+          form.reset();
+          confirmation.style.display = 'block';
+        } else {
+          alert("Something went wrong. Please try again.");
+        }
+      } catch (err) {
+        console.error(err);
+        alert("Failed to send message.");
+      }
+    });
+  </script>
+</body>
+</html>

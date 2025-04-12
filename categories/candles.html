@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candles</title>
+   <!-- 
+    - logo-tab
+  -->
+  <link rel="shortcut icon" href="../assets/images/ees-logoo.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/candles.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+<body>
+
+      <section class="section product" id="shop" aria-label="product">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Best</span> Candles
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" >
+                  <img src="./EESProducts/Candles/Daisy Flower Candle.png"  loading="lazy"
+                    alt="Commodo leo sed porta" class="img-cover default">
+                    <!-- back side image -->
+                  <!-- <img src="./EESProducts/Candles/Daisy Flower Candle.png" width="360" height="360" loading="lazy"
+                    alt="Commodo leo sed porta" class="img-cover hover"> -->
+
+                  
+                </div>
+
+                <div class="card-content">
+
+                  <!-- <div class="wrapper">
+                    <div class="rating-wrapper">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">(1)</span>
+                  </div> -->
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Daisy Flower Candle</a>
+                    <p>Customized Fragnance</p>
+                  </h3>
+                  <div class="product-actions">
+                    <data class="card-price" value="15">₹ 299.00</data>
+                  <!-- <a href="#" class="buy-now-btn" onclick="openCheckoutModal('Devil Candle', 45)">Buy Now</a> -->
+                  <a href="#" class="buy-now-btn"
+                    onclick="redirectToPayPage('Daisy Flower Candle', 299)">
+                    Buy Now
+                  </a>
+
+                  </div>
+                  
+                </div>
+
+              </div>
+            </li>
+
+            <!-- <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./EESProducts/Candles/Devil Candle.png" width="360" height="360" loading="lazy"
+                    alt="Purus consequat congue sit" class="img-cover default">
+                  
+
+                  
+                </div>
+
+                <div class="card-content">  
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Devil Candle</a>
+                  </h3>
+                  <div class="product-actions">
+                    <data class="card-price" value="45">$45.00</data>
+                  <a href="#" class="buy-now-btn" onclick="redirectToPayPage('Devil Candle', 45)" >Buy Now</a>
+                  </div>
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./EESProducts/Candles/I LOVE YOU Message Candle.png" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover default">
+                  
+                  
+                </div>
+
+                <div class="card-content">
+
+  
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">I LOVE YOU Message Candle</a>
+                  </h3>
+                  <div class="product-actions">
+                    <data class="card-price" value="45">$45.00</data>
+                    <a href="#" class="buy-now-btn" onclick="redirectToPayPage('I LOVE YOU Message Candle', 45)">Buy Now</a>
+                  </div>
+                  
+
+                </div>
+
+              </div>
+            </li> -->
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./EESProducts/Candles/Iced Coffee Candle.png" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover default">
+                  
+
+                  
+                </div>
+
+                <div class="card-content">
+
+                 
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Iced Coffee Candle</a>
+                    <p>Coffee Fragnance</p>
+                  </h3>
+                  <div class="product-actions">
+                    <data class="card-price" value="49">₹ 349.00</data>
+                  <a href="#" class="buy-now-btn" onclick="redirectToPayPage('Iced Coffee Candle', 349)">Buy Now</a>
+                  </div>
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./EESProducts/Candles/Lemongrass Candle.png" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover default">
+                 
+
+                  
+                </div>
+
+                <div class="card-content">
+
+              
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Lemongrass Candle</a>
+                    <p>4 pieces</p>
+                  </h3>
+                  <div class="product-actions">
+                    <data class="card-price" value="85">₹ 799.00</data>
+                  <a href="#" class="buy-now-btn" onclick="redirectToPayPage('Lemongrass Candle', 799)">Buy Now</a>
+                  </div>
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./EESProducts/Candles/Message candles.png" width="360" height="360" loading="lazy"
+                    alt="Nam justo libero porta ege" class="img-cover default"> 
+                </div>
+
+                <div class="card-content">
+
+                  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Message candles</a>
+                    <p>Customized Fragnance</p>
+                  </h3>
+                  <div class="product-actions">
+                    <data class="card-price" value="85">₹ 299.00</data>
+                  <a href="#" class="buy-now-btn" onclick="redirectToPayPage('Message candles', 299)">Buy Now</a>
+                  </div>
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./EESProducts/Candles/Rose Pillar Candle.png" width="360" height="360" loading="lazy"
+                    alt="Nam justo libero porta ege" class="img-cover default">
+                
+
+                  
+                </div>
+
+                <div class="card-content">
+
+                  
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Rose Pillar Candle</a>
+                    <p>2 Pieces Rose Fragnance</p>
+                  </h3>
+                  <div class="product-actions">
+                    <data class="card-price" value="85">₹ 399.00</data>
+                  <a href="#" class="buy-now-btn" onclick="redirectToPayPage('Rose Pillar Candle',  399.00)">Buy Now</a>
+                  </div>
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./EESProducts/Candles/Set of 3 - Candles.png" width="360" height="360" loading="lazy"
+                    alt="Etiam commodo leo sed" class="img-cover default">
+                  
+                    
+
+                  
+                </div>
+
+                <div class="card-content">
+
+                  
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Set of 3 - Candles</a>
+                    <p>3 Different Fragnance(Combo)</p>
+                  </h3>
+                  <div class="product-actions">
+                    <data class="card-price" value="55">₹ 649.00</data>
+                    <a href="#" class="buy-now-btn" onclick="redirectToPayPage('Rose Pillar Candle', 649)">Buy Now</a>
+                  </div>
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./EESProducts/Candles/Skull Candles.png" width="360" height="360" loading="lazy"
+                    alt="Etiam commodo leo sed" class="img-cover default">
+                  
+                    
+
+                  
+                </div>
+
+                <div class="card-content">
+
+                  
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Skull Candles</a>
+                    <p>2 pieces</p>
+                  </h3>
+                  <div class="product-actions">
+                    <data class="card-price" value="55">₹ 399.00</data>
+                    <a href="#" class="buy-now-btn" onclick="redirectToPayPage('Rose Pillar Candle', 399)">Buy Now</a>
+                  </div>
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./EESProducts/Candles/Wax Sachet.png" width="360" height="360" loading="lazy"
+                    alt="Etiam commodo leo sed" class="img-cover default">
+                  
+                    
+
+                  
+                </div>
+
+                <div class="card-content">
+
+                  
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Wax Sachet</a>
+                    <p>2 Pieces Vanilla Fragnance</p>
+                  </h3>
+                  <div class="product-actions">
+                    <data class="card-price" value="55">₹ 349.00</data>
+                    <a href="#" class="buy-now-btn" onclick="redirectToPayPage('Wax Sachet', 349)">Buy Now</a>
+                  </div>
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+          </ul>
+
+        </div>
+        <!-- Checkout Modal -->
+      <div id="checkout-modal" class="modal hidden">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeCheckoutModal()">&times;</span>
+
+          <h3 id="modal-product-name">Product Name</h3>
+          <p><strong>Pay via QR:</strong></p>
+          <img src="./EESProducts/QRPay.png" alt="QR Code" class="qr-image" />
+
+          <form id="order-form">
+            <input type="text" name="user_name" placeholder="Your Name" required />
+            <textarea name="user_address" placeholder="Your Address" required></textarea>
+            <input type="hidden" name="product_name" id="form-product-name" />
+            <button type="submit">Submit Order</button>
+          </form>
+
+          <p style="text-align:center; margin-top: 1rem;">or</p>
+
+          <div class="social-order">
+            <button onclick="orderViaWhatsApp()">Order via WhatsApp</button>
+            <button onclick="orderViaInstagram()">DM on Instagram</button>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      
+
+</body>
+<script src="../assets/js/script.js" ></script>
+
+<script>
+  
+function redirectToPayPage(name,  price) {
+  const url = new URL('pay.html', window.location.href);
+  url.searchParams.set("name", name);
+  
+  url.searchParams.set("price", price);
+  window.location.href = url.toString();
+}
+
+
+
+</script>
+
+</html>

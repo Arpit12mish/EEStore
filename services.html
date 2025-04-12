@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crystal Services</title>
+  <!-- 
+    - logo-tab
+  -->
+  <link rel="shortcut icon" href="./assets/images/ees-logoo.png" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #fdfdfd;
+      color: #333;
+    }
+
+    h1, h2 {
+      color: #8e44ad;
+    }
+
+    .section {
+      background: #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "\2728";
+      margin-right: 0.5rem;
+      color: #e67e22;
+    }
+
+    form {
+      margin-top: 2rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    form button {
+      background: #8e44ad;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <h1>✨ Personalised Crystal Matching</h1>
+    <p>Find the Stone That Speaks to Your Soul</p>
+    <p>
+      Not every crystal is for everyone — let us help you discover the one meant for you. Fill out a short form designed to explore your energy, intentions, and personal journey.
+    </p>
+    <ul>
+      <li>Emotional and spiritual needs</li>
+      <li>Personal goals and manifestations</li>
+      <li>Energy imbalances or chakra blockages</li>
+    </ul>
+    <p>Whether you're seeking clarity, protection, love, or abundance — there's a crystal calling your name.</p>
+  </div>
+
+  <div class="section">
+    <h2>🔮 Crystal Charging & Cleansing</h2>
+    <p>Reignite Their Natural Power</p>
+    <ul>
+      <li>Remove stagnant or negative energies</li>
+      <li>Reprogram intentions with clarity</li>
+      <li>Recharge under aligned elemental forces (sun, moon, sound, or earth)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>✨ Free Aura Checking</h2>
+    <p>Discover Your Inner Energy!</p>
+    <ul>
+      <li>Understand your current energy state</li>
+      <li>Reveal blockages or imbalances</li>
+      <li>Receive personalized guidance to restore harmony</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>💍 Get Your Personalized Recommendation</h2>
+    <form action="https://formsubmit.co/mish12arpit@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="Name" placeholder="Your Name" required />
+      <input type="email" name="Email" placeholder="Your Email" required />
+      <input type="text" name="Phone" placeholder="Your Phone Number" required pattern="[0-9]{10}" title="Please enter a 10-digit phone number" maxlength="10"/>
+      <textarea name="Intentions" rows="4" placeholder="What are you looking to heal, manifest, or understand?" required></textarea>
+      <textarea name="Challenges" rows="3" placeholder="Any emotional/energy challenges you face?" required></textarea>
+      <textarea name="Preferred Service" rows="2" placeholder="Crystal Matching, Charging, Aura Checking or All?" required></textarea>
+      <button type="submit">Get My Match</button>
+    </form>
+  </div>
+</body>
+</html>
