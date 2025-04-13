@@ -915,10 +915,10 @@ body {
 
   .hero-title .span { 
     font-size: 0.5em;
-    color: var(--bittersweet);
+    color: var(--brown);
    }
    .hero-title{
-    color: var(--bittersweet);
+    color: var(--brown);
    }
   .hero-text { font-size: 2.4rem; }
 
