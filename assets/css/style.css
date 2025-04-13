@@ -840,6 +840,7 @@ body {
     background-color: #c6542f;
   }
   
+  
 
   /**
    * CTA
@@ -912,6 +913,13 @@ body {
     padding-inline-start: 10%;
   }
 
+  .hero-title .span { 
+    font-size: 0.5em;
+    color: var(--bittersweet);
+   }
+   .hero-title{
+    color: var(--bittersweet);
+   }
   .hero-text { font-size: 2.4rem; }
 
 
@@ -949,7 +957,38 @@ body {
   }
 
 }
+@media (max-width: 768px) {
+  .buy-now-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+    padding: 8px;
+    font-size: 1.7rem;
+    border-radius: 8px;
+    border: 2px solid black;
+  }
+  .hero.has-bg-image {
+    background-image: url('../images/herobannermobile.png') !important;
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-title {
+    color: var(--bittersweet);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  }
 
+  .hero-title .span {
+    color: var(--bittersweet);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  }
+  .hero-text {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    font-weight: bold;
+    color: var(--light-gray);
+  }
+}
 
 
 
