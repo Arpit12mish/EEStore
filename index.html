@@ -869,6 +869,24 @@
       window.location.href = url.toString();
     }
   </script>
+  <script type="module">
+    import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
+  
+    const visitorKey = 'visitor-id';
+    let visitorId = localStorage.getItem(visitorKey);
+    if (!visitorId) {
+      visitorId = uuidv4();
+      localStorage.setItem(visitorKey, visitorId);
+    }
+  
+    fetch('/api/track-visit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ visitorId })
+    })
+    .then(res => res.json())
+    .then(data => console.log('Unique visitors:', data.uniqueVisitors));
+  </script>
   
 </body>
 
