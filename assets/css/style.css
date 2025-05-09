@@ -1196,31 +1196,45 @@ body {
 
 @media (min-width: 350px) and (max-width: 768px) {
   .has-scrollbar {
-    
-    display: grid ;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px ;
-    overflow-x: unset ;
-    scroll-snap-type: unset ;
-    padding: 0 ;
-    margin: 0 ;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+    overflow-x: hidden !important;
+    scroll-snap-type: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
+
   .scrollbar-item {
-    min-width: 100% ;
-    scroll-snap-align: unset ;
+    min-width: auto !important;
+    scroll-snap-align: unset !important;
   }
+
+  .category-card .card-banner {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .category-card .img-cover {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
   .category-card .card-title {
-    font-size: 1.3rem ;
-    text-align: center ;
+    font-size: 1.3rem !important;
+    text-align: center !important;
     display: block;
     width: 100%;
   }
 
   .category-card .h3 {
-    font-size: 1.6rem ;
-    text-align: center ;
+    font-size: 1.6rem !important;
+    text-align: center !important;
   }
 }
+
 
 /* bottom navbar 
  */
