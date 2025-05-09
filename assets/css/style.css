@@ -1177,7 +1177,7 @@ body {
 
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .has-scrollbar {
     display: grid !important;
     grid-template-columns: 1fr !important;
@@ -1192,22 +1192,33 @@ body {
     min-width: 100% !important;
     scroll-snap-align: unset !important;
   }
-}
+} */
 
 @media (min-width: 350px) and (max-width: 768px) {
   .has-scrollbar {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid ;
+    grid-template-columns: 1fr ;
+    gap: 20px ;
+    overflow-x: unset ;
+    scroll-snap-type: unset ;
+    padding: 0 ;
+    margin: 0 ;
+  }
+  .scrollbar-item {
+    min-width: 100% ;
+    scroll-snap-align: unset ;
   }
   .category-card .card-title {
-    font-size: 1.3rem !important;
-    text-align: center !important;
+    font-size: 1.3rem ;
+    text-align: center ;
     display: block;
     width: 100%;
   }
 
   .category-card .h3 {
-    font-size: 1.6rem !important;
-    text-align: center !important;
+    font-size: 1.6rem ;
+    text-align: center ;
   }
 }
 
