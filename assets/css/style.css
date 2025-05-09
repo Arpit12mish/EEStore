@@ -1196,9 +1196,9 @@ body {
 
 @media (min-width: 350px) and (max-width: 768px) {
   .has-scrollbar {
-    grid-template-columns: repeat(2, 1fr);
+    
     display: grid ;
-    grid-template-columns: 1fr ;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px ;
     overflow-x: unset ;
     scroll-snap-type: unset ;
