@@ -144,6 +144,9 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
 }
+.has-scrollbar {
+  overflow-x: hidden !important; /* iOS fix */
+}
 
 :focus-visible { outline-offset: 4px; }
 
